@@ -1,0 +1,19 @@
+{
+  "name": "react-tutorial-part-3",
+  "version": "1.0.0",
+  "description": "Part 3a of Fullstackopen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js", 
+		"dev": "nodemon index.js"
+  },
+  "author": "Bao Doan",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
