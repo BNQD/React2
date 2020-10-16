@@ -21,10 +21,13 @@ app.use(morgan(function (tokens, request, response) {
 }))
 
 app.get('/info', (request, response) => {
-	response.send(`
-		<p> Phonebook has info for ${Persons.length} people </p>
+	Person.countDocuments({}, function (err, count) {
+		response.send(`
+		<p> Phonebook has info for ${count} people </p>
 		<p> ${Date()} </p>
 		`)
+	});
+	
 })
 
 app.get('/api/persons', (request, response) => {
